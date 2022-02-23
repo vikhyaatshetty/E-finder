@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../static/guide.css">
+    <link rel="icon" href="../static/favicon1.ico" type="image/ico">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0ab7ffbb6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>E-Finder:Guide</title>
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="../static/logo1.jpg" alt="Logo"></div>
+            <li><a href="/">Home</a></li>     
+            <li><a href="subscription">Subscription</a></li>      
+            <li><a href="guide">Guide</a></li>
+            <li><a href="aboutus">About Us</a></li>            
+            
+            
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="loginicon">
+
+        </div>
+        <input type="checkbox" id="ttot">
+        <label for="ttot" class=" show-btn fas fa-user "></label>
+
+
+
+        <div class="wholelogin">
+
+
+            <div class="container1">
+
+                <input type="checkbox" id="flip">
+                <label for="ttot" class="close-btn fas fa-times " title="close"></label>
+                <div class="cover">
+                    <div class="front">
+                        <img src="../static/frontImg.jpg" alt="">
+                        <div class="text">
+                            <span class="text-1">Every new friend is a <br> new adventure</span>
+                            <span class="text-2">Let's get connected</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <img class="backImg" src="../static/backImg.jfif" alt="">
+                        <div class="text">
+                            <span class="text-1">Complete miles of journey <br> with one step</span>
+                            <span class="text-2">Let's get started</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="forms">
+                    <div class="form-content">
+                        <div class="login-form">
+                            <div class="title">Login</div>
+                            <form action="/login" method="post">
+                                <div class="input-boxes">
+                                    <div class="input-box">
+                                        <i class="fas fa-envelope"></i>
+                                        <input type="email" name="email" placeholder="Enter your email" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <i class="fas fa-lock"></i>
+                                        <input type="password" name="password" placeholder="Enter your password"
+                                            required>
+                                    </div>
+                                    <div class="text"><a href="#">Forgot password?</a></div>
+                                    <div class="button input-box">
+                                        <input type="submit" value="Sumbit">
+                                    </div>
+                                    <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup
+                                            now</label></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="signup-form">
+                            <div class="title">Signup</div>
+                            <form action="#">
+                                <div class="input-boxes">
+                                    <div class="input-box">
+                                        <i class="fas fa-user"></i>
+                                        <input type="text" placeholder="Enter your name" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <i class="fas fa-envelope"></i>
+                                        <input type="text" placeholder="Enter your email" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <i class="fas fa-lock"></i>
+                                        <input type="password" placeholder="Enter your password" required>
+                                    </div>
+                                    <div class="button input-box">
+                                        <input type="submit" value="Sumbit">
+                                    </div>
+                                    <div class="text sign-up-text">Already have an account? <label for="flip">Login
+                                            now</label></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+        </div>
+    </nav>
+
+    <!-------------------------------------------->
+    <div class="guidecontainerw">
+        <div class="headguideconta">
+            <div class="contetguide">
+                <i class="fas fa-graduation-cap fa-6x"></i>
+                <h1>
+                    E-Finder Guides
+                </h1>
+                <p>
+                    E-Finder Guides allow you to familiarize yourself with the world of electric vehicles. They will
+                    help you understand range,charging, how electric cars save you money, their environmental impact and
+                    much more. Discover the world of electric cars today!
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="guideflexwalag">
+            <div class="g1"><a href="#guide1">Public Charging</a></div>
+            <div class="g1-er"><a href="#guide2"> Home Charging</a></div>
+            <div class="g1"><a href="#guide3">E-Finder Map Guides</a></div>
+        </div>
+
+
+        <div class="pcmain" id="guide1">
+            <diV class="pcinner">
+                <div class="headpc">
+                    <i class="fas fa-charging-station fa-3x"></i>
+                    <h2>Public Charging</h2>
+                </div>
+                <div class="infopc">
+                    <h3>Electric Car Charging Guide </h3>
+                    <p>
+                        This charging guide discusses 3 key concepts about recharging an electric car :-
+                    </p>
+                    <p>
+                        Before we get into those concepts, it's good to know the various terms used for charging
+                        stations.<br>
+                        They usually all refer to the same thing :-
+                    </p>
+                    <div class="ulpc">
+                        <ul>
+                            <li>Charging station</li>
+                            <li>Charging outlet</li>
+                            <li>Charging plug</li>
+                            <li>Charge port</li>
+                            <li>Charger</li>
+
+                        </ul>
+                    </div>
+                    <button class="pcbut"><a href="#"> read the full guide</a></button>
+
+                </div>
+
+            </diV>
+
+        </div>
+
+
+        <!------------------------------------------------------------->
+        <div class="pcmain" id="guide2">
+            <diV class="pcinner">
+                <div class="headpc">
+                    <i class="fas fa-home fa-3x"></i>
+                    <h2>Charging EVs at Home</h2>
+                </div>
+                <div class="infopc">
+                    <h3>How to Choose Your Home Charging Station </h3>
+                    <p>
+                        Easily compare the most popular charging stations on the market with this useful guide. 
+                    </p>
+                    <p>
+                        Our goal is to help you find a level 2 charging station that answers all of your charging needs,<br> includes all of the features you are looking for, and is within your price range.
+                    </p>
+                    <div class="ulpc">
+                        <ul>
+                            <li>Elements to be included when purchasing</li>
+                            <li>How to choose a station based on your vehicle</li>
+                            <li>Best time to buy a charging station</li>
+                            <li>Charging station features to consider</li>
+                            
+
+                        </ul>
+                    </div>
+                    <button class="pcbut"><a href="#"> read the full guide</a></button>
+
+                </div>
+
+            </diV>
+
+        <!-------------------------------------------------------------->
+        <div class="pcmain" id="guide3">
+            <diV class="pcinner">
+                <div class="headpc">
+                    <i class="fas fa-map fa-3x"></i>
+                    <h2>E-Finder Map Guides</h2>
+                </div>
+                <div class="infopc">
+                    <h3>E-Finder Map Guide </h3>
+                    <p>
+                        This guide teaches you everything you need to know about using the E-Finder Map.
+                    </p>
+                    <p>
+                        Planning a road trip? This guide will help you use our powerful trip planner tool, allowing you to find EV charging stations along your route.<br>
+                        
+                    </p>
+                    <div class="ulpc">
+                        <ul>
+                            <li>login to E-Finder</li>
+                            <li>cheak your car plug</li>
+                            <li>then open map to search nerast station</li>
+                            <li>on gps</li>
+                            <li>then find route and enjoy!!</li>
+
+                        </ul>
+                    </div>
+                    <button class="pcbut"><a href="#"> read the full guide</a></button>
+
+                </div>
+
+            </diV>
+
+        
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- foooter start from here KUNALLLLLLLL -->
+    <footer>
+        <div class="container">
+            <!-- ye agewala div ABOUT US wala he -->
+            <div class="secaboutus">
+                <h2 class="footerhead">About Us</h2>
+                <p>
+                            E-Finder is an Web Application that helps you find your nearest electric charging station at ease. Apart from
+          searching, you can enjoy many features lika Pre-booking, Recharge offers, Live navigation & More.
+
+                </p>
+                <ul class="sci">
+                    <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2 class="footerhead2">Quick Links </h2>
+                <ul>
+                    <li><a href="aboutus">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="sec contact1">
+                <h2 class="footerhead3">Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i> </span>
+                        <span> Atharva College Of Engineering <br>
+                            Charkop Naka, Malad West,<br> Mumbai - 400095,<br>IND </span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-alt"></i> </span>
+
+                        <P><a href="tel:+91 500 123 4500">+91 500 123 4500</a><br>
+                            <a href="tel:+91 500 123 4500">+91 500 123 4600</a><br>
+                        </P>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i> </span>
+                        <p> <a href="mailto:E-Finder@gmail.com">E-Finder@gmail.com</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </footer>
+    <div class="copyright">
+        <p>copyright © 2022 E-finder. All Right Reserved. </p>
+
+    </div>
+
+    </footer>
+
+</body>
+
+</html>

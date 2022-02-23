@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+  <link rel="icon" href="../static/favicon1.ico" type="image/ico">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/0ab7ffbb6f.js" crossorigin="anonymous"></script>
+  <title>E-Finder:Payment</title>
+  <link rel="stylesheet" type="text/css" href="../static/payment.css">
+</head>
+
+<body>
+  <nav class="navbar background">
+    <ul class="nav-list">
+      <div class="logo"><img src="../static/logo1.jpg" alt="Logo"></div>
+      <li><a href="/">Home</a></li>
+      <li><a href="subscription">Subscription</a></li>
+      <li><a href="guide">Guide</a></li>
+      <li><a href="aboutus">About Us</a></li>
+    </ul>
+    <div class="rightNav">
+      <input type="text" name="search" id="search">
+      <button class="btn btn-sm">Search</button>
+    </div>
+    <div class="loginicon">
+
+    </div>
+    <input type="checkbox" id="ttot">
+    <label for="ttot" class=" show-btn fas fa-user "></label>
+
+
+
+    <div class="wholelogin">
+
+
+      <div class="container1">
+
+        <input type="checkbox" id="flip">
+        <label for="ttot" class="close-btn fas fa-times " title="close"></label>
+        <div class="cover">
+          <div class="front">
+            <img src="../static/frontImg.jpg" alt="">
+            <div class="text">
+              <span class="text-1">Every new friend is a <br> new adventure</span>
+              <span class="text-2">Let's get connected</span>
+            </div>
+          </div>
+          <div class="back">
+            <img class="backImg" src="../static/backImg.jfif" alt="">
+            <div class="text">
+              <span class="text-1">Complete miles of journey <br> with one step</span>
+              <span class="text-2">Let's get started</span>
+            </div>
+          </div>
+        </div>
+        <div class="forms">
+          <div class="form-content">
+            <div class="login-form">
+              <div class="title">Login</div>
+              <form action="/login" method="post">
+                <div class="input-boxes">
+                  <div class="input-box">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                  </div>
+                  <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                  </div>
+                  <div class="text"><a href="#">Forgot password?</a></div>
+                  <div class="button input-box">
+                    <input type="submit" value="Sumbit">
+                  </div>
+                  <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+                </div>
+              </form>
+            </div>
+            <div class="signup-form">
+              <div class="title">Signup</div>
+              <form action="#">
+                <div class="input-boxes">
+                  <div class="input-box">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Enter your name" required>
+                  </div>
+                  <div class="input-box">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Enter your email" required>
+                  </div>
+                  <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Enter your password" required>
+                  </div>
+                  <div class="button input-box">
+                    <input type="submit" value="Sumbit">
+                  </div>
+                  <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    </div>
+  </nav>
+  <!-------fhdsjfsdgfjgdfjhgsdjhgfjdgfjshdgfjshgfjhsgdfgsdf-->
+
+  <div class="row">
+    <div class="col-75">
+      <div class="container1212">
+        <form action="/subscription1" method="post">
+
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input class="halpt" type="text" id="fname" name="firstname" placeholder="Kunal P Sawant">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input class="halpt" type="text" id="email" name="email" placeholder="john@example.com">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input class="halpt" type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input class="halpt" type="text" id="city" name="city" placeholder="New York">
+
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input class="halpt" type="text" id="state" name="state" placeholder="NY">
+                </div>
+                <div class="col-50">
+                  <label for="zip">Zip</label>
+                  <input class="halpt" type="text" id="zip" name="zip" placeholder="10001">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Credit card number</label>
+              <input class="halpt" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Month</label>
+              <input class="halpt" type="text" id="expmonth" name="expmonth" placeholder="September">
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input class="halpt" type="text" id="expyear" name="expyear" placeholder="2018">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input class="halpt" type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <input type="submit" value="Continue to checkout" class="btn1212">
+        </form>
+      </div>
+    </div>
+    <!-------dsfsdfgdsfgudshfghdfigh-->
+
+  </div>
+  <footer>
+    <div class="container">
+      <!-- ye agewala div ABOUT US wala he -->
+      <div class="secaboutus">
+        <h2 class="footerhead">About Us</h2>
+        <p>
+                  E-Finder is an Web Application that helps you find your nearest electric charging station at ease. Apart from
+          searching, you can enjoy many features lika Pre-booking, Recharge offers, Live navigation & More.
+
+        </p>
+        <ul class="sci">
+          <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+          <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+          <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div class="sec quicklinks">
+        <h2 class="footerhead2">Quick Links </h2>
+        <ul>
+          <li><a href="aboutus">About</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="sec contact1">
+        <h2 class="footerhead3">Contact Info</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fas fa-map-marker-alt"></i> </span>
+            <span> Atharva College Of Engineering <br>
+              Charkop Naka, Malad West,<br> Mumbai - 400095,<br>IND </span>
+          </li>
+          <li>
+            <span><i class="fas fa-phone-alt"></i> </span>
+
+            <P><a href="tel:+91 500 123 4500">+91 500 123 4500</a><br>
+              <a href="tel:+91 500 123 4500">+91 500 123 4600</a><br>
+            </P>
+          </li>
+          <li>
+            <span><i class="fas fa-envelope"></i> </span>
+            <p> <a href="mailto:E-Finder@gmail.com">E-Finder@gmail.com</a>
+            </p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+
+  </footer>
+  <div class="copyright">
+    <p>copyright © 2022 E-finder. All Right Reserved. </p>
+
+  </div>
+
+  </footer>
+</body>
+
+</html>

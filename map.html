@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+        type="text/css">
+    <title>E-Finder:map</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+
+        #marker {
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .mapboxgl-popup {
+            max-width: 200px;
+        }
+
+        .map-nav {
+            display: flex;
+            width: 100%;
+            height: 60px;
+            background-color: blue;
+            justify-content: flex-end;
+        }
+
+        .nav-btn {
+            float: right;
+            text-transform: uppercase;
+            border-radius: 8px;
+            color: white;
+            font-size: 14px;
+            background-color: black;
+            padding: 6px 14px;
+            margin: 0px 34px;
+            cursor: pointer;
+        }
+
+        .nav-btn img {
+            width: 20%;
+        }
+
+        .nav-btn:hover {
+            background-color: rgb(119, 117, 117);
+        }
+
+        .rightNav {
+            padding-left: 260px;
+            padding-right: 24px;
+        }
+    </style>
+    <link rel="stylesheet" href="../static/home_style.css">
+    <script src="../static/map_js.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="../static/logo1.jpg" alt="Logo"></div>
+            <li><a href="/">Home</a></li>
+            <li><a href="subscription">Subscription</a></li>
+            <li><a href="guide">Guide</a></li>
+            <li><a href="aboutus">About Us</a></li>
+        </ul>
+        <div class="rightNav">
+            <button class="nav-btn" onclick="getLocation()"><img src="../static/google-marker.png" alt="google marker">
+                Get Live Location</button>
+        </div>
+    </nav>
+
+    <div id='map'></div>
+
+
+</body>
+
+</html>
